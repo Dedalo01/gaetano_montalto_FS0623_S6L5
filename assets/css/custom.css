@@ -12018,31 +12018,28 @@ main section:first-of-type {
 }
 main section:first-of-type .dropdown .btn {
   /*   @include button-outline-variant(white); */
-  /* @include button-variant(black, 1px solid white); */
+  /*  @include button-variant(black, 1px solid white); */
   --bs-btn-padding-y: 0.2rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: auto;
   --bs-btn-border-radius: 0;
 }
 main section:first-of-type .movies-display-options .btn {
-  --bs-btn-padding-y: 0.2rem;
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: auto;
-  --bs-btn-border-radius: 0;
-  --bs-btn-color: #959595;
-  --bs-btn-border-color: #959595;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #959595;
-  --bs-btn-hover-border-color: #959595;
-  --bs-btn-focus-shadow-rgb: 149, 149, 149;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #959595;
-  --bs-btn-active-border-color: #959595;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #959595;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #959595;
-  --bs-gradient: none;
+  border-color: grey;
+  border-radius: 0;
+}
+main section:first-of-type .movies-display-options .btn svg {
+  fill: gray;
+}
+main section:first-of-type .movies-display-options .btn svg:hover {
+  fill: black;
+}
+main section:first-of-type .movies-display-options .btn:hover {
+  background-color: white;
+}
+
+main section h1, main section .h1 {
+  margin-left: 2rem !important;
 }
 
 main section img,
@@ -12052,7 +12049,7 @@ main section svg {
 }
 
 /* general styling */
-/* .container {
+/* section {
   inline-size: min(100% - 4rem, 70rem);
   margin: 150px auto 30px auto;
 } */

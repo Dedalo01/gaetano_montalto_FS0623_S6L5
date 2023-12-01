@@ -4,8 +4,25 @@ main section:first-of-type {
   .dropdown {
     .btn {
       /*   @include button-outline-variant(white); */
-      /* @include button-variant(black, 1px solid white); */
+      /*  @include button-variant(black, 1px solid white); */
       @include button-size(0.2rem, 0.5rem, auto, 0);
+    }
+  }
+
+  .movies-display-options {
+    .btn {
+      border-color: grey;
+      border-radius: 0;
+      svg {
+        fill: gray;
+        &:hover {
+          fill: black;
+        }
+      }
+
+      &:hover {
+        background-color: white;
+      }
     }
   }
 }
@@ -30,7 +47,7 @@ main section svg {
   inline-size: min(100% - 4rem, 70rem);
   margin: 150px auto 30px auto;
 } */
-*/
+
 /* media scroller */
 
 .media-container {
