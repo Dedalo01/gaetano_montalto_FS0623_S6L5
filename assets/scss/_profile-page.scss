@@ -1,0 +1,105 @@
+@mixin page-center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin font-sm {
+  font-size: 0.8rem;
+}
+
+@mixin btn-profile {
+  margin-right: 1rem;
+
+  border: 1px solid grey;
+  background-color: transparent;
+  color: grey;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+#profile-body {
+  background-color: #0e0e0e;
+}
+
+#profile-header {
+  @include page-center;
+  background-color: #141414;
+  img {
+    width: 15%;
+  }
+}
+
+// main
+#profile-main {
+  /*  display: flex;
+  align-items: center;
+  justify-content: center; */
+  @include page-center;
+}
+
+#profile-section {
+  overflow-y: none;
+  background-color: #141414;
+  padding: 5.5rem 0;
+
+  h1 {
+    border-bottom: 1px solid rgb(42, 42, 42);
+  }
+
+  .container-settings {
+    padding: 0 25%;
+  }
+}
+
+.text-profile {
+  @include font-sm;
+  form {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(42, 42, 42);
+
+    input {
+      width: 100%;
+      background-color: grey;
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border: none;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+
+  #maturity-settings {
+    border-top: 1px solid rgb(42, 42, 42);
+    border-bottom: 1px solid rgb(42, 42, 42);
+    padding: 1rem 0;
+
+    button {
+      @include btn-profile;
+
+      &:first-of-type {
+        color: white;
+        background-color: rgb(42, 42, 42);
+        border-color: black;
+      }
+    }
+  }
+
+  #autoplay-controls {
+    @extend #maturity-settings;
+    border-bottom: none;
+  }
+}
+
+#button-group {
+  padding: 1rem 0;
+  border-top: 1px solid darkgray;
+  button {
+    @include btn-profile;
+  }
+}

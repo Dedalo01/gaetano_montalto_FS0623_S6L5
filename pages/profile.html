@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile edit</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body id="profile-body">
+    <header id="profile-header">
+        <a href="/index.html">
+            <img src="/assets/netflix_logo.png" alt="logo">
+        </a>
+    </header>
+
+    <main id="profile-main">
+
+        <section id="profile-section">
+
+            <div class="container-settings text-secondary">
+                <h1 class="text-white">Edit Profile</h1>
+                <div id="name-img-lan-selection " class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="img-container">
+                                <img src="/assets/kids_icon.png" class="img-fluid" alt="profile pic">
+                            </div>
+                        </div>
+
+                        <div class="col-8">
+                            <div class="text-profile">
+
+                                <form>
+                                    <input type="text" placeholder="Strive Student">
+
+                                    <p>Language:</p>
+                                    <div class="custom-select">
+                                        <select>
+                                            <option value="english">English</option>
+                                            <option value="italian">Italian</option>
+                                            <option value="german">German</option>
+                                        </select>
+                                    </div>
+
+                                </form>
+
+
+                                <div id="maturity-settings">
+                                    <p>Maturity Settings</p>
+                                    <button>All Maturity Ratings</button>
+                                    <p>Show titles of all maturity ratings for this profile.</p>
+
+                                    <button>Edit</button>
+                                </div>
+
+                                <div id="autoplay-controls">
+                                    <p>Autoplay Controls</p>
+                                    <label for="form-control">
+                                        <input type="checkbox" name="checkbox" checked>
+                                        Autoplay next episode in a series on all devices.
+                                    </label>
+
+                                    <label for="form-control">
+                                        <input type="checkbox" name="checkbox" checked>
+                                        Autoplay previews while broswing on all devices.
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="button-group">
+                        <button>Save</button>
+                        <button>Cancel</button>
+                        <button>Delete Profile</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+nav {
+  @include center-95;
+
+  .container-fluid {
+    @include make-container(0);
+  }
+
+  .container {
+    @extend .container-fluid;
+    flex-basis: 9%;
+  }
+
+  ul li {
+    list-style-type: none;
+    cursor: pointer;
+
+    .dropdown {
+      width: 4rem;
+      padding: 0;
+
+      button {
+        @include button-size(10px, 10px, 1rem, 0);
+      }
+    }
+  }
+}
